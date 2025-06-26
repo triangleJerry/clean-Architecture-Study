@@ -9,6 +9,7 @@ on:
   push:
     branches:
       - main                # main 브랜치에 푸시되면 실행
+      - develop             # develop 브랜치에 푸시되면 실행
   pull_request:
     types: [opened, synchronize, reopened]  # PR 생성·동기화·재오픈 시 실행
 
@@ -36,8 +37,8 @@ jobs:
       - name: Build
         run: |
           xcodebuild clean build \
-            -project NetworkingStudy.xcodeproj \
-            -scheme NetworkingStudy \
+            -project CleanArchitectureStudy.xcodeproj \
+            -scheme CleanArchitectureStudy \
             -sdk iphonesimulator \
             -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=18.2'
 
@@ -45,7 +46,7 @@ jobs:
       # - name: Run tests
       #   run: |
       #     xcodebuild test \
-      #       -project NetworkingStudy.xcodeproj \
-      #       -scheme NetworkingStudy \
+      #       -project CleanArchitectureStudy.xcodeproj \
+      #       -scheme CleanArchitectureStudy \
       #       -sdk iphonesimulator \
       #       -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=18.2'
