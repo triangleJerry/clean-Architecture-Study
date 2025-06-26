@@ -49,11 +49,107 @@
 		058CF7DF2E0D16830093AEB7 /* CleanArchitectureStudy */ = {
 			isa = PBXGroup;
 			children = (
-				058CF7DC2E0D16830093AEB7 /* Assets.xcassets */,
 				058CF7DD2E0D16830093AEB7 /* CleanArchitectureStudyApp.swift */,
-				058CF7DE2E0D16830093AEB7 /* ContentView.swift */,
+				058CF7E32E0D21760093AEB7 /* Presentation */,
+				058CF7E52E0D21910093AEB7 /* Domain */,
+				058CF7E62E0D21990093AEB7 /* Data */,
+				058CF7E42E0D21830093AEB7 /* Files */,
 			);
 			path = CleanArchitectureStudy;
+			sourceTree = "<group>";
+		};
+		058CF7E32E0D21760093AEB7 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				058CF7E72E0D21F80093AEB7 /* Views */,
+				058CF7E82E0D228A0093AEB7 /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		058CF7E42E0D21830093AEB7 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				058CF7DC2E0D16830093AEB7 /* Assets.xcassets */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		058CF7E52E0D21910093AEB7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				058CF7EB2E0D22AC0093AEB7 /* Entities */,
+				058CF7EA2E0D22A10093AEB7 /* Repositories */,
+				058CF7E92E0D22960093AEB7 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		058CF7E62E0D21990093AEB7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				058CF7EE2E0D22C60093AEB7 /* Models */,
+				058CF7ED2E0D22C00093AEB7 /* DataSources */,
+				058CF7EC2E0D22B90093AEB7 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		058CF7E72E0D21F80093AEB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				058CF7DE2E0D16830093AEB7 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		058CF7E82E0D228A0093AEB7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		058CF7E92E0D22960093AEB7 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		058CF7EA2E0D22A10093AEB7 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		058CF7EB2E0D22AC0093AEB7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		058CF7EC2E0D22B90093AEB7 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		058CF7ED2E0D22C00093AEB7 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		058CF7EE2E0D22C60093AEB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
