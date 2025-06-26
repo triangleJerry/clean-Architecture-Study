@@ -51,7 +51,7 @@ final class PokemonRemoteDataSourceImpl: CardRemoteDataSource {
             throw APIError.unexpectedStatus((response as? HTTPURLResponse)?.statusCode ?? -1)
         }
 
-        let dto = try JSONDecoder().decode(CardsResponseDTO.self, from: data)
+        let dto = try JSONDecoder().decode(PokemonCardsResponseDTO.self, from: data)
         return dto.data
     }
 }
