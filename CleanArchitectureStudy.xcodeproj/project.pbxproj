@@ -10,6 +10,7 @@
 		058CF7E02E0D16830093AEB7 /* CleanArchitectureStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CF7DD2E0D16830093AEB7 /* CleanArchitectureStudyApp.swift */; };
 		058CF7E12E0D16830093AEB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CF7DE2E0D16830093AEB7 /* ContentView.swift */; };
 		058CF7E22E0D16830093AEB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058CF7DC2E0D16830093AEB7 /* Assets.xcassets */; };
+		058CF7F52E0D25DD0093AEB7 /* PokemonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CF7F42E0D25DD0093AEB7 /* PokemonCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		058CF7DC2E0D16830093AEB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		058CF7DD2E0D16830093AEB7 /* CleanArchitectureStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureStudyApp.swift; sourceTree = "<group>"; };
 		058CF7DE2E0D16830093AEB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		058CF7F42E0D25DD0093AEB7 /* PokemonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 				058CF7E32E0D21760093AEB7 /* Presentation */,
 				058CF7E52E0D21910093AEB7 /* Domain */,
 				058CF7E62E0D21990093AEB7 /* Data */,
+				058CF7F22E0D257D0093AEB7 /* Infrastructure */,
 				058CF7E42E0D21830093AEB7 /* Files */,
 			);
 			path = CleanArchitectureStudy;
@@ -79,8 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				058CF7EB2E0D22AC0093AEB7 /* Entities */,
-				058CF7EA2E0D22A10093AEB7 /* Repositories */,
 				058CF7E92E0D22960093AEB7 /* UseCases */,
+				058CF7EA2E0D22A10093AEB7 /* Interfaces */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -88,9 +91,9 @@
 		058CF7E62E0D21990093AEB7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				058CF7EE2E0D22C60093AEB7 /* Models */,
-				058CF7ED2E0D22C00093AEB7 /* DataSources */,
 				058CF7EC2E0D22B90093AEB7 /* Repositories */,
+				058CF7EF2E0D251E0093AEB7 /* Network */,
+				058CF7F12E0D25550093AEB7 /* PersistentStorages */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -117,16 +120,17 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
-		058CF7EA2E0D22A10093AEB7 /* Repositories */ = {
+		058CF7EA2E0D22A10093AEB7 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Repositories;
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 		058CF7EB2E0D22AC0093AEB7 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				058CF7F42E0D25DD0093AEB7 /* PokemonCard.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -138,18 +142,33 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
-		058CF7ED2E0D22C00093AEB7 /* DataSources */ = {
+		058CF7EF2E0D251E0093AEB7 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = DataSources;
+			path = Network;
 			sourceTree = "<group>";
 		};
-		058CF7EE2E0D22C60093AEB7 /* Models */ = {
+		058CF7F12E0D25550093AEB7 /* PersistentStorages */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Models;
+			path = PersistentStorages;
+			sourceTree = "<group>";
+		};
+		058CF7F22E0D257D0093AEB7 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				058CF7F32E0D25890093AEB7 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		058CF7F32E0D25890093AEB7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				058CF7E02E0D16830093AEB7 /* CleanArchitectureStudyApp.swift in Sources */,
+				058CF7F52E0D25DD0093AEB7 /* PokemonCard.swift in Sources */,
 				058CF7E12E0D16830093AEB7 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
