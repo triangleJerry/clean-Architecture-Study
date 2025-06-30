@@ -23,7 +23,7 @@ struct PokemonCard: Identifiable, Equatable {
     /// 카드 이미지의 고해상도 버전 URL입니다.
     public let imageLargeURL: URL
     /// 카드가 속한 세트의 정보입니다.
-    public let setInfo: SetInfo
+    public let set: SetInfo
     /// 즐겨찾기로 표시되었는지 여부입니다.
     public var isFavorite: Bool = false
 }

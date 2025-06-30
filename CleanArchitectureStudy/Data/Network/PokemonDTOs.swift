@@ -14,7 +14,7 @@ struct PokemonCardDTO: Decodable {
     let supertype: String
     let types: [String]?
     let images: ImageURLs
-    let setInfo: SetInfo
+    let set: SetInfo
 
     struct ImageURLs: Decodable {
       let small: URL
@@ -50,6 +50,6 @@ extension PokemonCardDTO {
                      types: types ?? [],
                      imageSmallURL: images.small,
                      imageLargeURL: images.large,
-                     setInfo: setInfo)
+                     set: set)
     }
 }
