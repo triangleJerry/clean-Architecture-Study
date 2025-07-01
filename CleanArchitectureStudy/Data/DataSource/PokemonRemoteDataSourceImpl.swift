@@ -22,41 +22,38 @@ final class PokemonRemoteDataSourceImpl: CardRemoteDataSource {
     func fetchCards(page: Int,
                     query: String?,
                     filter: String?) async throws -> [PokemonCardDTO] {
+        // 쿼리 파라미터 구성
+        guard var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: false) else {
+            return []
+        }
         
-        var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: false)!
-        // 기본 쿼리
-        var items: [URLQueryItem] = [
-            .init(name: "page",      value: "\(page)"),
-            .init(name: "pageSize",  value: "\(pageSize)"),
-            .init(name: "select",    value: "id,name,supertype,types,images,set")
-        ]
-        // Lucene 스타일 검색 / 필터
-        var qItems: [String] = []
-        if let q = query, !q.isEmpty {
-            // 이름 검색 시 와일드카드 포함 예시: name:"*검색어*"
-            qItems.append("name:\"*\(q)*\"")
-        }
-        if let f = filter, !f.isEmpty {
-            // ex) types:Fire 또는 supertype:Energy
-            qItems.append(f)
-        }
-        if !qItems.isEmpty {
-            items.append(.init(name: "q", value: qItems.joined(separator: " ")))
-        }
-        components.queryItems = items
+        components.queryItems = [
+            URLQueryItem(name: "page", value: "\(page)"),
+            URLQueryItem(name: "pageSize", value: "\(pageSize)"),
+            URLQueryItem(name: "select", value: "id,name,supertype,types,images,set")
+        ] + {
+            var items: [URLQueryItem] = []
+            if let q = query, !q.isEmpty {
+                items.append(.init(name: "q", value: "name:\"*\(q)*\""))
+            }
+            if let f = filter, !f.isEmpty {
+                items.append(.init(name: "q", value: f))
+            }
+            return items
+        }()
 
-        let request = URLRequest(url: components.url!)
-        let (data, response) = try await client.data(for: request)
-        guard let http = response as? HTTPURLResponse, 200..<300 ~= http.statusCode else {
-            throw APIError.unexpectedStatus((response as? HTTPURLResponse)?.statusCode ?? -1)
+        guard let url = components.url else {
+            return []
         }
-
-        let dto = try JSONDecoder().decode(PokemonCardsResponseDTO.self, from: data)
+        
+        // URLSessionProtocol 확장(decodable)을 사용해 간단히 요청 및 디코딩
+        let dto = try await client.decodable(PokemonCardsResponseDTO.self, from: url)
         return dto.data
     }
 }
 
 // 간단한 Error 정의
 enum APIError: Error {
+    
     case unexpectedStatus(Int)
 }
