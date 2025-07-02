@@ -9,6 +9,7 @@ import SwiftUI
 
 @MainActor
 final class CardListViewModel: ObservableObject {
+    
     @Published var cards: [PokemonCard] = []
     
     private let repository: PokemonRepository

@@ -8,7 +8,7 @@
 import Foundation
 
 /// 포켓몬 트레이딩 카드 게임의 카드를 나타내는 모델입니다.
-struct PokemonCard: Identifiable, Equatable {
+struct PokemonCard: Identifiable, Mockable {
     
     /// 카드의 고유 식별자입니다.
     public let id: String
@@ -26,4 +26,27 @@ struct PokemonCard: Identifiable, Equatable {
     public let set: SetInfo
     /// 즐겨찾기로 표시되었는지 여부입니다.
     public var isFavorite: Bool = false
+    
+    static var mockInstance: PokemonCard {
+        
+        PokemonCard(
+            id: "ex13-10",
+            name: "Kingdra δ",
+            supertype: "Pokémon",
+            types: ["Fire", "Metal"],
+            imageSmallURL: URL(string: "https://images.pokemontcg.io/ex13/10.png")!,
+            imageLargeURL: URL(string: "https://images.pokemontcg.io/ex13/10_hires.png")!,
+            set: SetInfo(images: SetImages(
+                symbol: URL(string: "https://images.pokemontcg.io/ex13/symbol.png")!,
+                logo: URL(string: "https://images.pokemontcg.io/ex13/logo.png")!
+            ))
+        )
+    }
+}
+
+extension PokemonCard: Hashable {
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }

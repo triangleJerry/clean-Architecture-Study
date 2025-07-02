@@ -14,4 +14,16 @@ protocol URLSessionProtocol {
     func data(for request: URLRequest) async throws -> (Data, URLResponse)
 }
 
+extension URLSessionProtocol {
+    
+    /// 주어진 URL로 요청을 보내고, Decodable 타입으로 디코딩하여 반환합니다.
+    func decodable<T: Decodable>(_ type: T.Type, from url: URL) async throws -> T {
+        let (data, response) = try await data(for: URLRequest(url: url))
+        guard let http = response as? HTTPURLResponse, 200..<300 ~= http.statusCode else {
+            throw APIError.unexpectedStatus((response as? HTTPURLResponse)?.statusCode ?? -1)
+        }
+        return try JSONDecoder().decode(type, from: data)
+    }
+}
+
 extension URLSession: URLSessionProtocol { }
