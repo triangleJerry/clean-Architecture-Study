@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052CE1DA2E15113700126C91 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052CE1D92E15113700126C91 /* CardDetailView.swift */; };
 		057F5BD42E12483300F759A8 /* CardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057F5BD32E12483300F759A8 /* CardListViewModel.swift */; };
 		058CF7E02E0D16830093AEB7 /* CleanArchitectureStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CF7DD2E0D16830093AEB7 /* CleanArchitectureStudyApp.swift */; };
 		058CF7E22E0D16830093AEB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058CF7DC2E0D16830093AEB7 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		052CE1D92E15113700126C91 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		057F5BD32E12483300F759A8 /* CardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel.swift; sourceTree = "<group>"; };
 		058CF7C82E0D166A0093AEB7 /* CleanArchitectureStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitectureStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		058CF7DC2E0D16830093AEB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				058CF8032E0D36010093AEB7 /* MainView.swift */,
+				052CE1D92E15113700126C91 /* CardDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				058CF8022E0D2A3A0093AEB7 /* URLSessionProtocol.swift in Sources */,
 				058CF7E02E0D16830093AEB7 /* CleanArchitectureStudyApp.swift in Sources */,
 				058CF8002E0D29DA0093AEB7 /* PokemonRepositoryImpl.swift in Sources */,
+				052CE1DA2E15113700126C91 /* CardDetailView.swift in Sources */,
 				058CF8042E0D36010093AEB7 /* MainView.swift in Sources */,
 				057F5BD42E12483300F759A8 /* CardListViewModel.swift in Sources */,
 				058CF7FE2E0D29BD0093AEB7 /* PokemonRemoteDataSourceImpl.swift in Sources */,

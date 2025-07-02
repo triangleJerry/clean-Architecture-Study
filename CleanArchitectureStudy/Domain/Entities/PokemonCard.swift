@@ -8,7 +8,7 @@
 import Foundation
 
 /// 포켓몬 트레이딩 카드 게임의 카드를 나타내는 모델입니다.
-struct PokemonCard: Identifiable, Equatable {
+struct PokemonCard: Identifiable {
     
     /// 카드의 고유 식별자입니다.
     public let id: String
@@ -26,4 +26,11 @@ struct PokemonCard: Identifiable, Equatable {
     public let set: SetInfo
     /// 즐겨찾기로 표시되었는지 여부입니다.
     public var isFavorite: Bool = false
+}
+
+extension PokemonCard: Hashable {
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }
