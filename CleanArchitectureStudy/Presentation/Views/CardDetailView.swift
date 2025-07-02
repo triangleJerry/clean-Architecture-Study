@@ -12,6 +12,7 @@ struct CardDetailView: View {
     let card: PokemonCard
 
     var body: some View {
+        
         ScrollView {
             VStack(spacing: 16) {
                 AsyncImage(url: card.imageLargeURL) { phase in
@@ -41,6 +42,6 @@ struct CardDetailView: View {
     }
 }
 
-//#Preview {
-//    CardDetailView()
-//}
+#Preview {
+    CardDetailView(card: .mockInstance)
+}
