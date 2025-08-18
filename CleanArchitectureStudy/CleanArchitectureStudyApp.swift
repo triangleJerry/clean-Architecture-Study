@@ -2,7 +2,7 @@
 //  CleanArchitectureStudyApp.swift
 //  CleanArchitectureStudy
 //
-//  Created by 장은석 on 6/26/25.
+//  Created by 장은석 on 8/18/25.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct CleanArchitectureStudyApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            ContentView()
         }
     }
 }
