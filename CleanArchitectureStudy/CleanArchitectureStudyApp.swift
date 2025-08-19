@@ -11,7 +11,12 @@ import SwiftUI
 struct CleanArchitectureStudyApp: App {
     var body: some Scene {
         WindowGroup {
-            RamdomUserView()
+            
+            let service = UserNetworkService()
+            let repo = UserRepositoryImpl(service: service)
+            let useCase = GetUsersUseCaseImpl(userRepository: repo)
+            let vm = RamdomUserViewModel(useCase: useCase)
+            RamdomUserView(viewModel: vm)
         }
     }
 }
