@@ -26,6 +26,7 @@ struct RamdomUSerRow: View {
                 .frame(height: 1),
             alignment: .bottom
         )
+        .background(.green)
     }
     
     // MARK: - view

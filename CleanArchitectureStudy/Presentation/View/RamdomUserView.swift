@@ -20,13 +20,13 @@ struct RamdomUserView: View {
         ScrollView {
             
             LazyVStack {
-                ForEach(viewModel.users) { user in
+                ForEach(viewModel.users, id: \.uuid) { user in
                     RamdomUSerRow(user: user)
-//                        .task {
-//                            if user == viewModel.users.last {
-//                                await viewModel.getUsers()
-//                            }
-//                        }
+                        .task {
+                            if user == viewModel.users.last {
+                                await viewModel.getUsers()
+                            }
+                        }
                 }
             }
             

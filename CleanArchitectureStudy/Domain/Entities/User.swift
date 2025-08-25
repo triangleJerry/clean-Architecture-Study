@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct User: Identifiable,Equatable {
+struct User: Equatable, Identifiable {
     
+    let uuid = UUID()
     let gender: String
     let name: UserName
     let email: String
@@ -18,7 +19,7 @@ struct User: Identifiable,Equatable {
     let picture: UserPicture
     
     static func == (lhs: Self, rhs: Self) -> Bool {
-        return lhs.id == rhs.id
+        lhs.uuid == rhs.uuid
     }
     
     /// Hashable을 채택하여 User의 Identifiable(ID = UserRemoteId) 요구사항을 만족
@@ -32,7 +33,6 @@ struct User: Identifiable,Equatable {
         let first: String
         let last: String
     }
-
 
     struct UserPicture: Codable {
         let large: String
