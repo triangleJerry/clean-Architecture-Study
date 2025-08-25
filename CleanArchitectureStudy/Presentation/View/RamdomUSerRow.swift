@@ -16,7 +16,7 @@ struct RamdomUSerRow: View {
         HStack(spacing: 8) {
             imageView
             
-            Text(user.displayName)
+            Text(user.name.title)
             Spacer()
         }
         .frame(height: 60)
@@ -32,7 +32,7 @@ struct RamdomUSerRow: View {
     
     private var imageView: some View {
         
-        AsyncImage(url: URL(string: user.avatarThumb ?? "")) { phase in
+        AsyncImage(url: URL(string: user.picture.thumbnail)) { phase in
             
             switch phase {
             case .empty:
@@ -52,6 +52,9 @@ struct RamdomUSerRow: View {
 }
 
 #Preview {
-    RamdomUSerRow(user: User(id: UUID(), displayName: "321", email: "123", phone: "123", cell: "123", avatarLarge: "https://randomuser.me/api/portraits/thumb/men/12.jpg", avatarThumb: "https://randomuser.me/api/portraits/thumb/men/12.jpg"))
+    
+    let user = User(gender: "gender", name: .init(title: "title", first: "first", last: "last"), email: "email", phone: "010=1234-5678", cell: "cell", id: .init(name: "name", value: "value"), picture: .init(large: "https://randomuser.me/api/portraits/thumb/men/12.jpg", medium: "https://randomuser.me/api/portraits/thumb/men/12.jpg", thumbnail: "https://randomuser.me/api/portraits/thumb/men/12.jpg"))
+    
+    RamdomUSerRow(user: user)
     
 }

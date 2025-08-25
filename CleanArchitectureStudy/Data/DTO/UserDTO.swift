@@ -34,33 +34,43 @@ struct UserDTO: Codable {
     let email: String
     let phone: String
     let cell: String
-    let userId: UserRemoteIDDTO
+    let id: UserRemoteIDDTO
     let picture: UserPictureDTO
+    
+    struct UserNameDTO: Codable {
+        let title: String
+        let first: String
+        let last: String
+    }
 
-    enum CodingKeys: String, CodingKey {
-        case gender, name, email, phone, cell, picture
-        case userId = "id"
+    struct UserRemoteIDDTO: Codable {
+        let name: String
+        let value: String?
+    }
+
+    struct UserPictureDTO: Codable {
+        let large: String
+        let medium: String
+        let thumbnail: String
     }
     
     func toDomain() -> User {
-        
-        .init(id: UUID(), displayName: name.title, email: email, phone: phone, cell: cell, avatarLarge: picture.large, avatarThumb: picture.thumbnail)
+        return User(
+            gender: gender,
+            name: .init(title: name.title, first: name.first, last: name.last),
+            email: email,
+            phone: phone,
+            cell: cell,
+            id: .init(name: id.name, value: id.value),
+            picture: .init(large: picture.large, medium: picture.medium, thumbnail: picture.thumbnail)
+        )
     }
 }
 
-struct UserNameDTO: Codable {
-    let title: String
-    let first: String
-    let last: String
+extension Array where Element == UserDTO {
+    func toDomain() -> [User] {
+        return self.map { $0.toDomain() }
+    }
 }
 
-struct UserRemoteIDDTO: Codable {
-    let name: String
-    let value: String?
-}
 
-struct UserPictureDTO: Codable {
-    let large: String
-    let medium: String
-    let thumbnail: String
-}

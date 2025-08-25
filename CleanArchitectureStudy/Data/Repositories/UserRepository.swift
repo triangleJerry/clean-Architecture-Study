@@ -24,6 +24,6 @@ final class UserRepositoryImpl: UserRepository {
     func getUsers() async throws -> [User] {
         
         let dtos = try await service.fetchUsers()
-        return dtos.map { $0.toDomain() }
+        return dtos.toDomain()
     }
 }

@@ -22,11 +22,11 @@ struct RamdomUserView: View {
             LazyVStack {
                 ForEach(viewModel.users) { user in
                     RamdomUSerRow(user: user)
-                        .task {
-                            if user == viewModel.users.last {
-                                await viewModel.getUsers()
-                            }
-                        }
+//                        .task {
+//                            if user == viewModel.users.last {
+//                                await viewModel.getUsers()
+//                            }
+//                        }
                 }
             }
             
