@@ -42,7 +42,7 @@ struct RamdomUSerRow: View {
                     .resizable()
                     .frame(width: 40, height: 40)
                     .clipShape(.circle)
-            case .failure(let error):
+            case .failure(_):
                 ProgressView()
             @unknown default:
                 ProgressView()
@@ -53,4 +53,5 @@ struct RamdomUSerRow: View {
 
 #Preview {
     RamdomUSerRow(user: User(id: UUID(), displayName: "321", email: "123", phone: "123", cell: "123", avatarLarge: "https://randomuser.me/api/portraits/thumb/men/12.jpg", avatarThumb: "https://randomuser.me/api/portraits/thumb/men/12.jpg"))
+    
 }

@@ -20,7 +20,10 @@ final class UserNetworkService {
             throw URLError(.badServerResponse)
         }
         
-        let decodeData = try JSONDecoder().decode(UserResponseDTO.self, from: data)
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        decoder.dateDecodingStrategy = .iso8601
+        let decodeData = try decoder.decode(UserResponseDTO.self, from: data)
         
         return decodeData.results
     }

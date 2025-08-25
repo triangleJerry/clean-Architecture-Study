@@ -34,6 +34,7 @@ struct RamdomUserView: View {
                 ProgressView()
             }
         }
+        .padding()
         .task {
             await viewModel.getUsers()
         }
