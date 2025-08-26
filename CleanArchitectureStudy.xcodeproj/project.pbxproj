@@ -6,43 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		052CE1DA2E15113700126C91 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052CE1D92E15113700126C91 /* CardDetailView.swift */; };
-		052CE1DF2E15137600126C91 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052CE1DE2E15137600126C91 /* Mockable.swift */; };
-		057F5BD42E12483300F759A8 /* CardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057F5BD32E12483300F759A8 /* CardListViewModel.swift */; };
-		058CF7E02E0D16830093AEB7 /* CleanArchitectureStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CF7DD2E0D16830093AEB7 /* CleanArchitectureStudyApp.swift */; };
-		058CF7E22E0D16830093AEB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058CF7DC2E0D16830093AEB7 /* Assets.xcassets */; };
-		058CF7F52E0D25DD0093AEB7 /* PokemonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CF7F42E0D25DD0093AEB7 /* PokemonCard.swift */; };
-		058CF7F72E0D290F0093AEB7 /* PokemonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CF7F62E0D290F0093AEB7 /* PokemonRepository.swift */; };
-		058CF7F92E0D294B0093AEB7 /* PokemonDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CF7F82E0D29460093AEB7 /* PokemonDTOs.swift */; };
-		058CF7FC2E0D29A60093AEB7 /* CardRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CF7FB2E0D29A60093AEB7 /* CardRemoteDataSource.swift */; };
-		058CF7FE2E0D29BD0093AEB7 /* PokemonRemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CF7FD2E0D29BD0093AEB7 /* PokemonRemoteDataSourceImpl.swift */; };
-		058CF8002E0D29DA0093AEB7 /* PokemonRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CF7FF2E0D29DA0093AEB7 /* PokemonRepositoryImpl.swift */; };
-		058CF8022E0D2A3A0093AEB7 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CF8012E0D2A3A0093AEB7 /* URLSessionProtocol.swift */; };
-		058CF8042E0D36010093AEB7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CF8032E0D36010093AEB7 /* MainView.swift */; };
-		058CF8062E0D36690093AEB7 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058CF8052E0D36690093AEB7 /* URLSessionHTTPClient.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		052CE1D92E15113700126C91 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
-		052CE1DE2E15137600126C91 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
-		057F5BD32E12483300F759A8 /* CardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListViewModel.swift; sourceTree = "<group>"; };
-		058CF7C82E0D166A0093AEB7 /* CleanArchitectureStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitectureStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		058CF7DC2E0D16830093AEB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		058CF7DD2E0D16830093AEB7 /* CleanArchitectureStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArchitectureStudyApp.swift; sourceTree = "<group>"; };
-		058CF7F42E0D25DD0093AEB7 /* PokemonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCard.swift; sourceTree = "<group>"; };
-		058CF7F62E0D290F0093AEB7 /* PokemonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonRepository.swift; sourceTree = "<group>"; };
-		058CF7F82E0D29460093AEB7 /* PokemonDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDTOs.swift; sourceTree = "<group>"; };
-		058CF7FB2E0D29A60093AEB7 /* CardRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRemoteDataSource.swift; sourceTree = "<group>"; };
-		058CF7FD2E0D29BD0093AEB7 /* PokemonRemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonRemoteDataSourceImpl.swift; sourceTree = "<group>"; };
-		058CF7FF2E0D29DA0093AEB7 /* PokemonRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonRepositoryImpl.swift; sourceTree = "<group>"; };
-		058CF8012E0D2A3A0093AEB7 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
-		058CF8032E0D36010093AEB7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		058CF8052E0D36690093AEB7 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		0541E8712E531A620081E352 /* CleanArchitectureStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitectureStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0541E8732E531A620081E352 /* CleanArchitectureStudy */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CleanArchitectureStudy;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		058CF7C52E0D166A0093AEB7 /* Frameworks */ = {
+		0541E86E2E531A620081E352 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -52,263 +29,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		052CE1DB2E15136600126C91 /* Mock */ = {
+		0541E8682E531A620081E352 = {
 			isa = PBXGroup;
 			children = (
-				052CE1DE2E15137600126C91 /* Mockable.swift */,
-			);
-			path = Mock;
-			sourceTree = "<group>";
-		};
-		058CF7BF2E0D166A0093AEB7 = {
-			isa = PBXGroup;
-			children = (
-				058CF7DF2E0D16830093AEB7 /* CleanArchitectureStudy */,
-				058CF7C92E0D166A0093AEB7 /* Products */,
+				0541E8732E531A620081E352 /* CleanArchitectureStudy */,
+				0541E8722E531A620081E352 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		058CF7C92E0D166A0093AEB7 /* Products */ = {
+		0541E8722E531A620081E352 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				058CF7C82E0D166A0093AEB7 /* CleanArchitectureStudy.app */,
+				0541E8712E531A620081E352 /* CleanArchitectureStudy.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		058CF7DF2E0D16830093AEB7 /* CleanArchitectureStudy */ = {
-			isa = PBXGroup;
-			children = (
-				058CF7DD2E0D16830093AEB7 /* CleanArchitectureStudyApp.swift */,
-				058CF7E32E0D21760093AEB7 /* Presentation */,
-				058CF7E52E0D21910093AEB7 /* Domain */,
-				058CF7E62E0D21990093AEB7 /* Data */,
-				058CF7F22E0D257D0093AEB7 /* Infrastructure */,
-				058CF7E42E0D21830093AEB7 /* Files */,
-			);
-			path = CleanArchitectureStudy;
-			sourceTree = "<group>";
-		};
-		058CF7E32E0D21760093AEB7 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				058CF7E72E0D21F80093AEB7 /* Views */,
-				058CF7E82E0D228A0093AEB7 /* ViewModels */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		058CF7E42E0D21830093AEB7 /* Files */ = {
-			isa = PBXGroup;
-			children = (
-				058CF7DC2E0D16830093AEB7 /* Assets.xcassets */,
-			);
-			path = Files;
-			sourceTree = "<group>";
-		};
-		058CF7E52E0D21910093AEB7 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				058CF7EB2E0D22AC0093AEB7 /* Entities */,
-				058CF7E92E0D22960093AEB7 /* UseCases */,
-				058CF7EA2E0D22A10093AEB7 /* Interfaces */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		058CF7E62E0D21990093AEB7 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				058CF7EC2E0D22B90093AEB7 /* Repositories */,
-				058CF7EF2E0D251E0093AEB7 /* Network */,
-				058CF7FA2E0D299C0093AEB7 /* DataSource */,
-				058CF7F12E0D25550093AEB7 /* PersistentStorages */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		058CF7E72E0D21F80093AEB7 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				058CF8032E0D36010093AEB7 /* MainView.swift */,
-				052CE1D92E15113700126C91 /* CardDetailView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		058CF7E82E0D228A0093AEB7 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				057F5BD32E12483300F759A8 /* CardListViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		058CF7E92E0D22960093AEB7 /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		058CF7EA2E0D22A10093AEB7 /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				058CF7F62E0D290F0093AEB7 /* PokemonRepository.swift */,
-			);
-			path = Interfaces;
-			sourceTree = "<group>";
-		};
-		058CF7EB2E0D22AC0093AEB7 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				058CF7F42E0D25DD0093AEB7 /* PokemonCard.swift */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		058CF7EC2E0D22B90093AEB7 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				058CF7FF2E0D29DA0093AEB7 /* PokemonRepositoryImpl.swift */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
-		058CF7EF2E0D251E0093AEB7 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				058CF7F82E0D29460093AEB7 /* PokemonDTOs.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		058CF7F12E0D25550093AEB7 /* PersistentStorages */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PersistentStorages;
-			sourceTree = "<group>";
-		};
-		058CF7F22E0D257D0093AEB7 /* Infrastructure */ = {
-			isa = PBXGroup;
-			children = (
-				052CE1DB2E15136600126C91 /* Mock */,
-				058CF7F32E0D25890093AEB7 /* Network */,
-			);
-			path = Infrastructure;
-			sourceTree = "<group>";
-		};
-		058CF7F32E0D25890093AEB7 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				058CF8052E0D36690093AEB7 /* URLSessionHTTPClient.swift */,
-				058CF8012E0D2A3A0093AEB7 /* URLSessionProtocol.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		058CF7FA2E0D299C0093AEB7 /* DataSource */ = {
-			isa = PBXGroup;
-			children = (
-				058CF7FD2E0D29BD0093AEB7 /* PokemonRemoteDataSourceImpl.swift */,
-				058CF7FB2E0D29A60093AEB7 /* CardRemoteDataSource.swift */,
-			);
-			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		058CF7C72E0D166A0093AEB7 /* CleanArchitectureStudy */ = {
+		0541E8702E531A620081E352 /* CleanArchitectureStudy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 058CF7D32E0D166B0093AEB7 /* Build configuration list for PBXNativeTarget "CleanArchitectureStudy" */;
+			buildConfigurationList = 0541E87C2E531A630081E352 /* Build configuration list for PBXNativeTarget "CleanArchitectureStudy" */;
 			buildPhases = (
-				058CF7C42E0D166A0093AEB7 /* Sources */,
-				058CF7C52E0D166A0093AEB7 /* Frameworks */,
-				058CF7C62E0D166A0093AEB7 /* Resources */,
+				0541E86D2E531A620081E352 /* Sources */,
+				0541E86E2E531A620081E352 /* Frameworks */,
+				0541E86F2E531A620081E352 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				0541E8732E531A620081E352 /* CleanArchitectureStudy */,
+			);
 			name = CleanArchitectureStudy;
 			packageProductDependencies = (
 			);
 			productName = CleanArchitectureStudy;
-			productReference = 058CF7C82E0D166A0093AEB7 /* CleanArchitectureStudy.app */;
+			productReference = 0541E8712E531A620081E352 /* CleanArchitectureStudy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		058CF7C02E0D166A0093AEB7 /* Project object */ = {
+		0541E8692E531A620081E352 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
-					058CF7C72E0D166A0093AEB7 = {
+					0541E8702E531A620081E352 = {
 						CreatedOnToolsVersion = 16.4;
 					};
 				};
 			};
-			buildConfigurationList = 058CF7C32E0D166A0093AEB7 /* Build configuration list for PBXProject "CleanArchitectureStudy" */;
+			buildConfigurationList = 0541E86C2E531A620081E352 /* Build configuration list for PBXProject "CleanArchitectureStudy" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 058CF7BF2E0D166A0093AEB7;
+			mainGroup = 0541E8682E531A620081E352;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 058CF7C92E0D166A0093AEB7 /* Products */;
+			productRefGroup = 0541E8722E531A620081E352 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				058CF7C72E0D166A0093AEB7 /* CleanArchitectureStudy */,
+				0541E8702E531A620081E352 /* CleanArchitectureStudy */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		058CF7C62E0D166A0093AEB7 /* Resources */ = {
+		0541E86F2E531A620081E352 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				058CF7E22E0D16830093AEB7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		058CF7C42E0D166A0093AEB7 /* Sources */ = {
+		0541E86D2E531A620081E352 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				058CF8022E0D2A3A0093AEB7 /* URLSessionProtocol.swift in Sources */,
-				058CF7E02E0D16830093AEB7 /* CleanArchitectureStudyApp.swift in Sources */,
-				058CF8002E0D29DA0093AEB7 /* PokemonRepositoryImpl.swift in Sources */,
-				052CE1DA2E15113700126C91 /* CardDetailView.swift in Sources */,
-				058CF8042E0D36010093AEB7 /* MainView.swift in Sources */,
-				057F5BD42E12483300F759A8 /* CardListViewModel.swift in Sources */,
-				058CF7FE2E0D29BD0093AEB7 /* PokemonRemoteDataSourceImpl.swift in Sources */,
-				052CE1DF2E15137600126C91 /* Mockable.swift in Sources */,
-				058CF7F92E0D294B0093AEB7 /* PokemonDTOs.swift in Sources */,
-				058CF8062E0D36690093AEB7 /* URLSessionHTTPClient.swift in Sources */,
-				058CF7F52E0D25DD0093AEB7 /* PokemonCard.swift in Sources */,
-				058CF7FC2E0D29A60093AEB7 /* CardRemoteDataSource.swift in Sources */,
-				058CF7F72E0D290F0093AEB7 /* PokemonRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		058CF7D12E0D166B0093AEB7 /* Debug */ = {
+		0541E87A2E531A630081E352 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -372,7 +189,7 @@
 			};
 			name = Debug;
 		};
-		058CF7D22E0D166B0093AEB7 /* Release */ = {
+		0541E87B2E531A630081E352 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -429,7 +246,7 @@
 			};
 			name = Release;
 		};
-		058CF7D42E0D166B0093AEB7 /* Debug */ = {
+		0541E87D2E531A630081E352 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -444,7 +261,6 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,17 +268,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = greeneyes.CleanArchitectureStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		058CF7D52E0D166B0093AEB7 /* Release */ = {
+		0541E87E2E531A630081E352 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -477,7 +289,6 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,10 +296,6 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = greeneyes.CleanArchitectureStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -498,25 +305,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		058CF7C32E0D166A0093AEB7 /* Build configuration list for PBXProject "CleanArchitectureStudy" */ = {
+		0541E86C2E531A620081E352 /* Build configuration list for PBXProject "CleanArchitectureStudy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				058CF7D12E0D166B0093AEB7 /* Debug */,
-				058CF7D22E0D166B0093AEB7 /* Release */,
+				0541E87A2E531A630081E352 /* Debug */,
+				0541E87B2E531A630081E352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		058CF7D32E0D166B0093AEB7 /* Build configuration list for PBXNativeTarget "CleanArchitectureStudy" */ = {
+		0541E87C2E531A630081E352 /* Build configuration list for PBXNativeTarget "CleanArchitectureStudy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				058CF7D42E0D166B0093AEB7 /* Debug */,
-				058CF7D52E0D166B0093AEB7 /* Release */,
+				0541E87D2E531A630081E352 /* Debug */,
+				0541E87E2E531A630081E352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 058CF7C02E0D166A0093AEB7 /* Project object */;
+	rootObject = 0541E8692E531A620081E352 /* Project object */;
 }

@@ -2,7 +2,7 @@
 //  CleanArchitectureStudyApp.swift
 //  CleanArchitectureStudy
 //
-//  Created by 장은석 on 6/26/25.
+//  Created by 장은석 on 8/18/25.
 //
 
 import SwiftUI
@@ -11,7 +11,12 @@ import SwiftUI
 struct CleanArchitectureStudyApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            
+            let service = UserNetworkService()
+            let repo = UserRepositoryImpl(service: service)
+            let useCase = GetUsersUseCaseImpl(userRepository: repo)
+            let vm = RamdomUserViewModel(useCase: useCase)
+            RamdomUserView(viewModel: vm)
         }
     }
 }
