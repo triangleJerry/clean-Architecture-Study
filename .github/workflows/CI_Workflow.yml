@@ -40,7 +40,7 @@ jobs:
             -project CleanArchitectureStudy.xcodeproj \
             -scheme CleanArchitectureStudy \
             -sdk iphonesimulator \
-            -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=18.2'
+            -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=18.5'
 
       # 단계 5: 시뮬레이터에서 단위 테스트 실행
       # - name: Run tests
